@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Roboto:wght@300;400&display=swap');
+:root{
+    --bg:#222;
+    --clr:#fff;
+    --clr2:#999;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.red{
+    color: red;
+}
+.orange{
+    color: orange;
+}
+body{
+    background-color: var(--bg);
+    color: var(--clr);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    padding: 0 2rem;
+}
+.toggle-mode{
+    color: var(--clr2);
+    cursor: pointer;
+}
+.toggle-mode:hover{
+    color: var(--clr);
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.todo-box{
+    width: 500px;
+    padding: 1rem;
+}
+.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.text-input, .text, .btn{
+    padding: 0 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.text-input{
+    width: 100%;
+    background-color: transparent;
+    color: var(--clr);
+    border: solid 1px var(--clr2);
+    border-radius: 25px 0 0 25px;
+}
+.text-input:focus{
+    border: solid 1px var(--clr);
+    outline: none;
+}
+.btn{
+    border: solid 1px var(--clr2);
+    border-radius: 0 25px 25px 0;
+    background-color: var(--clr2);
+    color: var(--bg);
+}
+.btn:hover{
+    background-color: var(--bg);
+    color: var(--clr);
+    cursor: pointer;
+}
+.tasks{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.task{
+    margin-top: 0rem;
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px var(--bg);
+}
+.task:hover{
+    border: solid 1px var(--clr2);
+}
+.task:hover .icons{
+    opacity: 1;
+}
+.icons-box{
+    display: flex;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px;
+    opacity: 0;
+}
+.icons:hover{
+    font-size: 1.4rem;
+}
